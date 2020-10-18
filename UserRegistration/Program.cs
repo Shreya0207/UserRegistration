@@ -8,10 +8,10 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome to the User Registration Program");
             Validation regex = new Validation();
-            Console.WriteLine("Enter your last name:");
+            Console.WriteLine("Enter your EmailID:");
             string name = Console.ReadLine();
-            bool result = regex.ValidateName(name);
-            Console.WriteLine("Last Name: " + result);
+            bool result = regex.ValidateEmail(name);
+            Console.WriteLine("EmailID: " + result);
         }
     }
 }
