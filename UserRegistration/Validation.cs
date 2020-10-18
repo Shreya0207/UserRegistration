@@ -7,10 +7,10 @@ namespace UserRegistration
 {
     class Validation
     {
-        public static string EMAIL_REGEX = "^[0-9a-zA-Z]{1,}([._+-][0-9a-zA-Z]{0,})*[@][0-9a-zA-Z]{1,}.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$";
-        public bool ValidateEmail(string name)
+        public static string MOBILE_REGEX = "^[1-9]{1}[0-9]{1,2}[ ][1-9]{1}[0-9]{9}$";
+        public bool ValidateMobileNumber(string name)
         {
-            return Regex.IsMatch(name, EMAIL_REGEX);
+            return Regex.IsMatch(name, MOBILE_REGEX);
         }
     }
 }
