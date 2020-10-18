@@ -7,10 +7,10 @@ namespace UserRegistration
 {
     class Validation
     {
-        public static string MOBILE_REGEX = "^[1-9]{1}[0-9]{1,2}[ ][1-9]{1}[0-9]{9}$";
-        public bool ValidateMobileNumber(string name)
+        public static string PASSWORD1_REGEX = "^[A-Za-z0-9!@#$%^&*]{8,}$";
+        public bool ValidatePassword(string name)
         {
-            return Regex.IsMatch(name, MOBILE_REGEX);
+            return Regex.IsMatch(name, PASSWORD1_REGEX);
         }
     }
 }

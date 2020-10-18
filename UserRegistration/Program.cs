@@ -8,10 +8,10 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome to the User Registration Program");
             Validation regex = new Validation();
-            Console.WriteLine("Enter your Mobile Number with country code:");
+            Console.WriteLine("Enter your Password");
             string name = Console.ReadLine();
-            bool result = regex.ValidateMobileNumber(name);
-            Console.WriteLine("MobileNumber: " + result);
+            bool result = regex.ValidatePassword(name);
+            Console.WriteLine("Password: " + result);
         }
     }
 }
